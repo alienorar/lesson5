@@ -55,6 +55,7 @@
 h1 {
     text-align: center;
     color: #19843992;
+    padding: 20px;
 }
 
 .container {
@@ -252,4 +253,39 @@ span:hover {
     margin-top: 40px;
     background-color: #dfe3df7b;
     box-shadow: 10px 10px 5px rgb(152, 173, 190);
+}
+.square{
+    display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 20px;
+background-color: #dfe3df7b;
+}
+.square_img img{
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+.square_info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fff;
+    width: 600px;
+    height: 300px;
+}
+.square_box1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.body{
+    font-family: sans-serif;
+    /* box-shadow: 10px 10px 5px rgb(152, 173, 190); */
+
 }

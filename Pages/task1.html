@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Css/task1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    
+    <!-- Classwork -->
+    <!--Task1 -->
+    <div class="container">
+        <div class="mainbox">
+            <div class="boxes">
+                <div class="boxes_img">
+                    <img class="mySlides" src="../images/smallbg2.webp" alt="">
+                    <img class="mySlides" src="../images/smallbg1.webp" alt="">
+                    <img class="mySlides" src="../images/comp1.jpg" alt="">
+                    <img class="mySlides" src="../images/comp2.jpg" alt="">
+                    <img class="mySlides" src="../images/comp3.jpg" alt="">
+                    <img class="mySlides" src="../images/comp1.jpg" alt="">
+                    
+                    <div class="boxes_btn"> <button class="w3-button w3-black w3-display-left"
+                            onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            if (n > x.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = x.length }
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex - 1].style.display = "block";
+                        }
+                    </script>
+                </div>
+                <div class="boxes_info">
+                    <h2>Optimism is the faith that leads to achievement</h2>
+                    <div class="box1">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <h4>10 Oct 21, by Jane Ostin</h4>
+
+                    </div>
+                    <p>The only moment, the only life we have is in the NOW. What happened a few moments or several
+                        years ago is gone, what will happen this evening, or next month when we go on holidays is not
+                        here yet.</p>
+                    <a href="./">READ:MORE</a>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="boxes_img">
+                    <img src="../images/smallbg2.webp" alt="">
+                </div>
+                <div class="boxes_info">
+                    <h2>Optimism is the faith that leads to achievement</h2>
+                    <div class="box1">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <h4>10 Oct 21, by Jane Ostin</h4>
+
+                    </div>
+                    <p>The only moment, the only life we have is in the NOW. What happened a few moments or several
+                        years ago is gone, what will happen this evening, or next month when we go on holidays is not
+                        here yet.</p>
+                    <a href="./">READ:MORE</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ <!-- Task1 end -->
+
+ <!-- Task2 -->
+ 
+ <!-- Task2 end -->
 </body>
+
 </html>
